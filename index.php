@@ -14,5 +14,7 @@ $service->on('receive',function($serv,$rd,$fromId,$data){
     var_dump($data);
 });
 $service->on('close',function($service,$rd){
-   echo "服务关闭\n"; 
+   echo "服务关闭\n";
 });
+
+$service->start();
