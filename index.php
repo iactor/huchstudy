@@ -1,7 +1,7 @@
 <?php
 
 //创建服务器
-$server = new swoole_server("127.0.0.1", 9503);
+$server = new swoole_server("0.0.0.0", 9503);
 $server->on('connect', function ($server, $fd){
     echo "connection open: {$fd}\n";
 });
