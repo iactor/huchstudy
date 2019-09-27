@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webSocket</title>
+</head>
+<body>
+<div>hello</div>
+<script>
+    var wsService = "ws://192.168.0.122:9501";
+    var webSocket = new WebSocket(wsService);
+    webSocket.onopen = function(evt){
+        console.log('success');
+    }
+    webSocket.onclose = function(evt){
+        console.log(evt.data);
+    }
+    webSocket.onerror = function(evt,e){
+        console.log('error');
+    }
+</script>
+</body>
+</html>
