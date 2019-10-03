@@ -13,7 +13,7 @@ $server->on('receive',function($server,$rd,$from_id,$data){
 //处理异步任务
 $server->on('task',function ($server,$task_id,$from_id,$data){
     echo "执行异步ID：$task_id";
-    $server->finish("$data->ok");
+    $server->finish("$data  ->ok");
 });
 //处理结果
 $server->on('finish',function($server,$task_id,$data){
