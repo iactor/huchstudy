@@ -2,7 +2,7 @@
 
 header("Content-type:text/html;charset=utf-8");
 //创建服务器
-$server = new swoole_server("0.0.0.0", 9501);
+$server = new swoole_server("0.0.0.0", 9505);
 //设置异步 进程工作数
 $server->set(array('task_worker_num'=>4));
 //投递异步任务
