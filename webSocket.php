@@ -1,7 +1,7 @@
 <?php
 
 //websocket
-$server = new swoole_websocket_server("0.0.0.0", 9501);
+$server = new swoole_websocket_server("0.0.0.0", 9010);
 //open 建立连接 $ws 服务器 ，$request:客户端信息
 $server->on('open', function ($ws,$request){
     var_dump($request);
